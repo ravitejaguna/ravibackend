@@ -1,0 +1,16 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+Flask
+pandas==1.3.4
+numpy==1.21.4
+matplotlib==3.5.0
+flask_cors
+databricks==0.2
+databricks-sql-connector==0.9.1
+reliability==0.7.1
+werkzeug
+flask-session
+requests
+msal
+###
