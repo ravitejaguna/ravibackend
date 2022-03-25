@@ -3,10 +3,10 @@ from flask_cors import CORS, cross_origin
 from flask import Flask, render_template, request, redirect, url_for,jsonify
 app = Flask(__name__)
 
-#CORS(app, support_credentials=True, resources={r"/*": {"origins": "*"}})
+CORS(app, support_credentials=True, resources={r"/*": {"origins": "*"}})
 
 
-CORS(app, support_credentials=True, resources={r"/api/*": {"origins": "http://localhost:4900"}})
+#CORS(app, support_credentials=True, resources={r"/api/*": {"origins": "http://localhost:4900"}})
 
 @app.route('/')
 @cross_origin(supports_credentials=True, methods=['GET'], allow_headers=['Content-Type', 'Access-Control-Allow-Origin'])
