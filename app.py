@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 CORS(app, support_credentials=True, resources={r"/*": {"origins": "*"}})
 
-#Guna
+#Raviteja
 
 #CORS(app, support_credentials=True, resources={r"/api/*": {"origins": "http://localhost:4900"}})
 
